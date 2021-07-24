@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Orbitron; /* Гарнитура шрифта */
+    font-family: Orbitron; /* Гарнитура шрифта sssssssssssssssssssssssssssssssssss*/
     src: url(Orbitron.ttf); /* Путь к файлу со шрифтом */
    }    
 
 body{
     background: black;
 }
-
+ 
 .clock{
     position: absolute;
     top: 50%;
