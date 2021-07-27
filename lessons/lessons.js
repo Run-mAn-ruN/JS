@@ -20,7 +20,7 @@ let ask = (question, yes, no) => {
 
 ask(
     "Do you agree?",
-    function () { alert("You agreed!"); },
-    function () { alert("We canceled the execution!"); }
+    () => { alert("You agreed!"); },
+    () => { alert("We canceled the execution!"); }
 );
 
