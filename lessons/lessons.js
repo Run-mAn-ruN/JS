@@ -1,8 +1,26 @@
 "use strict"
+//меняем функцию на стрелочную
 
-
-
-function checkAge(a, b) {
-    if (a < b) return a;
-    else return b;
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
 }
+
+ask(
+    "Do you agree?",
+    function () { alert("You agreed!"); },
+    function () { alert("We canceled the execution!"); }
+);
+
+
+let ask = (question, yes, no) => {
+    if (confirm(question)) yes();
+    else no();
+}
+
+ask(
+    "Do you agree?",
+    () => { alert("You agreed!"); },
+    () => { alert("We canceled the execution!"); }
+);
+
